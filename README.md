@@ -70,16 +70,6 @@ Servo Motors (Robotic Arm)
 
 ---
 
-## 📸 Screenshots
-
-*(Add images here)*
-
-* Gesture detection
-* Robotic arm setup
-* Movement output
-
----
-
 ## 🛠 Installation & Setup
 
 ### 1. Clone the repository
