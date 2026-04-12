@@ -106,6 +106,9 @@ pip install opencv-python mediapipe pyserial
 python main.py
 ```
 
+## Why I built this
+To explore real-time human-computer interaction and integrate computer vision with embedded systems for intuitive control.
+
 ---
 
 ## 📌 Applications
