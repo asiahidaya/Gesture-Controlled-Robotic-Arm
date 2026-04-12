@@ -1,83 +1,128 @@
-# 🤖 Hand Gesture Controlled Robotic Arm
+# Hand Gesture-Controlled Robotic Arm 🤖✋
 
-A real-time robotic arm system controlled using hand gestures detected through computer vision. This project integrates Python-based hand tracking with Arduino-controlled servo motors to replicate human finger movements.
-
----
-
-## 🚀 Features
-
-- ✋ Real-time hand tracking using MediaPipe
-- 🎯 Accurate finger detection (Thumb to Pinky)
-- 🔄 Live gesture-to-hardware mapping
-- 🔌 Serial communication between Python and Arduino
-- 🤖 Servo motor control for robotic hand movement
+An interactive system that controls a robotic arm using real-time hand gestures.
+This project combines **Computer Vision + Arduino + Servo Motors** to create a contactless control system.
 
 ---
 
-## 🛠 Tech Stack
+## 🧠 Overview
 
-- **Programming Language:** Python, Arduino (C++)
-- **Libraries:** OpenCV, MediaPipe, PySerial
-- **Hardware:** Arduino, Servo Motors (5), Webcam
+This project enables users to control a robotic arm using hand gestures captured through a camera.
+The gestures are processed using Python, and commands are sent to an Arduino, which controls the servo motors of the robotic arm.
+
+---
+
+## ⚙️ System Architecture
+
+```
+Hand Gesture → Camera  
+        ↓  
+Python (OpenCV / MediaPipe)  
+        ↓  
+Serial Communication  
+        ↓  
+Arduino  
+        ↓  
+Servo Motors (Robotic Arm)
+```
+
+---
+
+## 🔧 Hardware Used
+
+* Arduino Uno
+* Servo Motors (for arm movement)
+* Robotic Arm Structure
+* Jumper Wires
+* Breadboard
+* Webcam / External Camera
+
+---
+
+## 💻 Software Used
+
+* Python
+* OpenCV
+* MediaPipe (for hand tracking)
+* Arduino IDE
+
+---
+
+## ✨ Features
+
+* ✋ Real-time hand gesture detection
+* 🤖 Controls robotic arm movements
+* 🔄 Smooth and responsive motion
+* 🔌 Serial communication between Python and Arduino
+* 🧠 Multi-domain integration (AI + Embedded Systems)
 
 ---
 
 ## ⚙️ How It Works
 
-1. Webcam captures live video feed
-2. MediaPipe detects hand landmarks
-3. Finger positions (UP/DOWN) are calculated
-4. Python sends commands via serial communication
-5. Arduino receives commands and moves servo motors
-6. Robotic hand mimics real-time gestures
+1. The camera captures live video of hand gestures
+2. Python processes the video using OpenCV / MediaPipe
+3. Hand landmarks are detected and interpreted
+4. Corresponding commands are generated
+5. Commands are sent via serial communication
+6. Arduino receives the data
+7. Servo motors move the robotic arm accordingly
 
 ---
 
+## 📸 Screenshots
+
+*(Add images here)*
+
+* Gesture detection
+* Robotic arm setup
+* Movement output
 
 ---
 
-## 🔌 Hardware Requirements
+## 🛠 Installation & Setup
 
-- Arduino Board (Uno/Nano)
-- 5 Servo Motors
-- Jumper Wires
-- USB Cable
-- Webcam
+### 1. Clone the repository
 
----
+```
+git clone https://github.com/asiahidaya/Gesture-Controlled-Robotic-Arm.git
+cd Gesture-Controlled-Robotic-Arm
+```
 
-## 🧠 Key Concepts Used
+### 2. Install Python dependencies
 
-- Computer Vision
-- Hand Landmark Detection
-- Real-time Processing
-- Serial Communication
-- Embedded Systems
+```
+pip install opencv-python mediapipe pyserial
+```
 
----
+### 3. Upload Arduino Code
 
+* Open Arduino IDE
+* Upload the `.ino` file to your Arduino board
 
----
+### 4. Run Python Script
 
-## ⚠️ Important Notes
-
-- Ensure correct COM port in Python code
-- Keep proper lighting for better hand detection
-- Adjust servo angles based on hardware setup
+```
+python main.py
+```
 
 ---
 
+## 📌 Applications
+
+* 🤖 Robotics and Automation
+* 🏥 Assistive Technology
+* 🎮 Gesture-based Control Systems
+* 🧠 Human-Computer Interaction
+
+---
 
 ## 🚀 Future Improvements
 
-- Add gesture customization
-- Improve finger detection accuracy
-- Wireless control using Bluetooth/WiFi
-- Add full robotic arm (not just fingers)
+* Add wireless communication (Bluetooth/WiFi)
+* Improve gesture recognition accuracy
+* Add more complex arm movements
+* Integrate with web dashboard (IoT)
+
 
 ---
-
-## 🙋‍♀️ Author
-
-**Asia Hidaya**  
-GitHub: https://github.com/asiahidaya
